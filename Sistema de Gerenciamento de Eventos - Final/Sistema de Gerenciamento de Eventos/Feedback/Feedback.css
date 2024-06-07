@@ -1,0 +1,201 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #092177;
+    color: white;
+    padding: 0 20px;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alterado para flex-start */
+    align-items: center;
+    gap: 1vh;
+}
+
+
+.logo img {
+    max-height: 80%;
+}
+
+.logo h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-header, .nav-corpo {
+    flex-grow: 1; 
+}
+
+.nav-header ul, .nav-corpo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-right: auto;
+}
+
+.nav-header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-header ul li a:hover {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.login img {
+    max-height: 80%;
+    margin-right: 10vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main */
+main {
+    padding: 20px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Tweets */
+.tweet {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tweet .tweet-content {
+    font-size: 16px;
+}
+
+.tweet .tweet-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.tweet .tweet-info span {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    margin-top: 17vh;
+    height: 40vh;
+    background-color: black;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo-footer img {
+    max-height: 80%;
+}
+
+.logo-footer h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.text-feedback{
+    padding: 70px 0 0 40px;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+} 
+
+.text-feedback a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #092177;
+}
+
+.text-feedback a:hover {
+    transition: font-size 0.5s ease;
+    color: white;
+    font-size: 22px;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais a img {
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redes-sociais a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cookies {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+

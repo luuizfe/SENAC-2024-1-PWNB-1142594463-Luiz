@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #092177;
+    color: white;
+    padding: 0 20px;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo img {
+    max-height: 80%;
+}
+
+.logo h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-header, .nav-corpo {
+    flex-grow: 1; 
+}
+
+.nav-header ul, .nav-corpo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-right: auto;
+}
+
+.nav-header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-header ul li a:hover {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.login img {
+    max-height: 80%;
+    margin-right: 10vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+thead {
+    background-color: #092177;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+tbody tr:hover {
+    background-color: #e2e2e8;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+footer {
+    position: relative;
+    margin-top: 40vh;
+    height: 40vh;
+    background-color: black;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo-footer img {
+    max-height: 80%;
+}
+
+.logo-footer h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.text-feedback{
+    padding: 70px 0 0 40px;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+} 
+
+.text-feedback a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #092177;
+}
+
+.text-feedback a:hover {
+    transition: font-size 0.5s ease;
+    color: white;
+    font-size: 22px;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais a img {
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redes-sociais a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cookies {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* CSS para o modal */
+.modal {
+    display: none; /* Ocultar por padrão */
+    position: fixed; /* Fixar posição */
+    z-index: 1; /* Colocar o modal sobre tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adicionar rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+}
+
+/* Fechar botão "X" */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

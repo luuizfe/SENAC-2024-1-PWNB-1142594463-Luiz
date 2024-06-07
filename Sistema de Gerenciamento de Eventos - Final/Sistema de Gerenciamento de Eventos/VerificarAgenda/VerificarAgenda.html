@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/VerificarAgenda/VerificarAgenda.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
+    <title>Eventando - Agendamentos</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" />
+            <h3>Eventando</h3>
+        </div>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="/HomePage/index.html">Home</a></li>
+                <li><a href="/VerificarAgenda/VerificarAgenda.html">Eventos</a></li>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="/Relatorio/Relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a href="#"><img src="/img/login 4.png"></a>
+        </div>
+    </header>
+
+    <main class="main">
+        <h2>Agendamentos</h2>
+        <div class="agendamentos"></div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalhes do Evento</h2>
+                <div id="modal-details"></div>
+                <button class="comprar-button">Comprar ingresso</button>
+            </div>
+        </div>
+
+        <div id="payment-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-payment-button">&times;</span>
+                <h2>Forma de Pagamento</h2>
+                <form id="payment-form">
+                    <label for="quantity">Quantidade de Ingressos:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                    <p id="total-price"></p>
+                    <label for="payment-method">Método de Pagamento:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="credit-card">Cartão de Crédito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank-transfer">Transferência Bancária</option>
+                    </select>
+                    <button type="submit">Confirmar Pagamento</button>
+                </form>
+            </div>
+        </div>
+        <a href="/CadastroEventos/CadastrarEventos.html" class="voltar-button">Voltar para Cadastro</a>
+    </main>
+    
+
+    <footer>    
+        <div class="text-feedback">
+            <p>Eventando é de confiança!<br> Dê uma olhada no <a href="/Feedback/Feedback.html">Feedback</a> de nossos clientes! <br> E sinta-se à vontade para publicar quaisquer comentários também!</p>
+        </div>
+    
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="/img/logo.png" />
+                <h3>Eventando</h3>
+            </div>
+    
+            <div class="redes-sociais">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="/img/instagram 1.png"></a></li>
+                        <li><a href="#"><img src="/img/facebook 1.png"></a></li>
+                        <li><a href="#"><img src="/img/whatsapp 1.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cookies">
+            <p>Preferências de cookies© 2024 Eventando</p>
+        </div>
+    </footer>
+
+    <script src="/VerificarAgenda/VerificarAgenda.js"></script>
+</body>
+</html>

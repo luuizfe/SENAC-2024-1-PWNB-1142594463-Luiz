@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* --Header --*/
+
+header {
+    background-color: #092177;
+    color: white;
+    padding: 0 20px;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo img {
+    max-height: 80%;
+}
+
+.logo h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-header, .nav-corpo {
+    flex-grow: 1; 
+}
+
+.nav-header ul, .nav-corpo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-right: auto;
+}
+
+.nav-header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-header ul li a:hover {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.login img {
+    max-height: 80%;
+    margin-right: 10vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* --CORPO DA PÁGINA-- */
+
+.aba-conteudo {
+    background-image: url(/img/backgroundHome.png);
+    margin: auto;
+    display: flex;
+    height: 20vh;
+    position: relative; 
+}
+
+.logo2 {
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center; 
+    gap: 1vh;
+}
+
+.logo2 img {
+    max-height: 80%;
+}
+
+.logo2 h3 {
+    margin: 0;
+    color: white;
+    display: flex; 
+    align-items: center; 
+    font-size: 25px;
+}
+
+.logo2 p {
+    margin-left: -20vh;
+    margin-top: 17vh; 
+    color: white;
+    width: 70%;
+    font-size: 25px;
+    font-family: 'Inter';
+}
+
+
+.logosenac {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    max-height: 100px; 
+}
+
+
+.introducao h1 {
+    font-size: 20px;
+    font-family: 'Inter';
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.lista-opcoes a {
+    border: 1.5px solid black;
+    border-radius: 3px;
+}
+
+.nav-corpo ul {
+    margin-top: 90px;
+}
+
+.nav-corpo a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-corpo a:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: lightgray;
+    color: white;
+    transform: scale(1.1); 
+}
+
+/*Footer*/
+
+footer {
+    position: relative;
+    margin-top: 17vh;
+    height: 40vh;
+    background-color: black;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo-footer img {
+    max-height: 80%;
+}
+
+.logo-footer h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.text-feedback{
+    padding: 70px 0 0 40px;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+} 
+
+.text-feedback a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #092177;
+}
+
+.text-feedback a:hover {
+    transition: font-size 0.5s ease;
+    color: white;
+    font-size: 22px;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais a img {
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redes-sociais a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cookies {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+}

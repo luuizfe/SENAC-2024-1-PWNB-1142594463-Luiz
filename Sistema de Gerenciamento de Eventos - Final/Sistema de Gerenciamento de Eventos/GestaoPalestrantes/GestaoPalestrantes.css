@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #092177;
+    color: white;
+    padding: 0 20px;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo img {
+    max-height: 80%;
+}
+
+.logo h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-header, .nav-corpo {
+    flex-grow: 1;
+}
+
+.nav-header ul, .nav-corpo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-right: auto;
+}
+
+.nav-header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-header ul li a:hover {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.login img {
+    max-height: 80%;
+    margin-right: 10vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-cadastroevento {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    background-color: #061343;
+    border-radius: 15px;
+    border: 7px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.form-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.event-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form label {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.event-form button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #092177;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.event-form button:hover {
+    background-color: #061343;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container a {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    margin-top: 17vh;
+    height: 40vh;
+    background-color: black;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo-footer img {
+    max-height: 80%;
+}
+
+.logo-footer h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.text-feedback{
+    padding: 70px 0 0 40px;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+} 
+
+.text-feedback a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #092177;
+}
+
+.text-feedback a:hover {
+    transition: font-size 0.5s ease;
+    color: white;
+    font-size: 22px;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais a img {
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redes-sociais a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cookies {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: white;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;}

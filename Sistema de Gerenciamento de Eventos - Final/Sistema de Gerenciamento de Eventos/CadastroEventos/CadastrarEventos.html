@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CadastroEventos/CadastrarEventos.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
+    <title>Eventando - Cadastrar Eventos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" />
+            <h3>Eventando</h3>
+        </div>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="/HomePage/index.html">Home</a></li>
+                <li><a href="/VerificarAgenda/VerificarAgenda.html">Eventos</a></li>
+                <li><a href="#">Quem somos?</a></li>
+                <li><a href="/Relatorio/Relatorio.html">Relatório</a></li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a href="#"><img src="/img/login 4.png"></a>
+        </div>
+    </header>
+    <main>
+        <div class="form-cadastroevento">
+            <h2 class="form-title">Cadastrar Evento</h2>
+            <form class="event-form" id="eventForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="local">Local:</label>
+                <input type="text" id="local" name="local" required>
+                
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                
+                <label for="tipo">Tipo de Evento:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="conferencia">Conferência</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminario">Seminário</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <label for="publico">Público-Alvo:</label>
+                <input type="text" id="publico" name="publico" required>
+                
+                <label for="capacidade">Capacidade Máxima:</label>
+                <input type="number" id="capacidade" name="capacidade" required>
+                
+                <label for="preco">Preço do Ingresso:</label>
+                <input type="number" id="preco" name="preco" step="0.01" required>
+                
+                <label for="disponibilidade">Número de Ingressos Disponíveis:</label>
+                <input type="number" id="disponibilidade" name="disponibilidade" required>
+
+                <label for="banner">Banner:</label>
+                <input type="file" id="banner" name="banner" accept="image/*">
+                
+                <div class="button-container">
+                </div>
+            </form>
+            <div class="event-form2">
+                <button type="submit">Cadastrar</button>
+                <a href="/VerificarAgenda/VerificarAgenda.html"><button type="button" id="verificarAgenda">Verificar agenda</button></a>
+                <button type="button" id="btnAdicionarAtividades">Adicionar atividades</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text-feedback">
+            <p>Eventando é de confiança!<br> Dê uma olhada no <a href="/Feedback/Feedback.html">Feedback</a> de nossos clientes! <br> E sinta-se à vontade para publicar quaisquer comentários também!</p>
+        </div>
+    
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="/img/logo.png" />
+                <h3>Eventando</h3>
+            </div>
+    
+            <div class="redes-sociais">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="/img/instagram 1.png"></a></li>
+                        <li><a href="#"><img src="/img/facebook 1.png"></a></li>
+                        <li><a href="#"><img src="/img/whatsapp 1.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cookies">
+            <p>Preferências de cookies© 2024 Eventando</p>
+        </div>
+    </footer>
+
+    <script src="/CadastroEventos/CadastrarEventos.js"></script>
+</body>
+</html>

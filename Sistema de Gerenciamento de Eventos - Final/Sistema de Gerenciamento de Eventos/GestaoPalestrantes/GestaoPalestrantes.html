@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/GestaoPalestrantes/GestaoPalestrantes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
+    <title>Eventando - Gestão de Palestrantes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" />
+            <h3>Eventando</h3>
+        </div>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="/HomePage/index.html">Home</a></li>
+                <li><a href="/VerificarAgenda/VerificarAgenda.html">Eventos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="/Relatorio/Relatorio.html">Relatório</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="login">
+            <a href="#"><img src="/img/login 4.png"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-cadastroevento">
+            <h2 class="form-title">Gestão de Palestrantes</h2>
+            <form class="event-form" id="speakerForm">
+                <label for="eventSelect">Selecione o Evento:</label>
+                <select id="eventSelect">
+                    <option value="">Selecione um evento</option>
+                </select>
+                
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="bio">Biografia:</label>
+                <textarea id="bio" name="bio" required></textarea>
+                
+                <label for="photo">Foto:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                
+                <label for="topic">Tema:</label>
+                <input type="text" id="topic" name="topic" required>
+                
+                <label for="presentationDate">Data da Apresentação:</label>
+                <input type="date" id="presentationDate" name="presentationDate" required>
+                
+                <label for="presentationTime">Horário da Apresentação:</label>
+                <input type="time" id="presentationTime" name="presentationTime" required>
+                
+                <label for="infrastructure">Infraestrutura:</label>
+                <input type="text" id="infrastructure" name="infrastructure" required>
+                
+                <button type="submit">Adicionar Palestrante</button>
+                <button type="button" id="verPalestrantes" class="button-primary">Ver Palestrantes</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text-feedback">
+            <p>Eventando é de confiança!<br> Dê uma olhada no <a href="/Feedback/Feedback.html">Feedback</a> de nossos clientes! <br> E sinta-se à vontade para publicar quaisquer comentários também!</p>
+        </div>
+    
+            <div class="footer-content">
+                <div class="logo-footer">
+                    <img src="/img/logo.png" />
+                    <h3>Eventando</h3>
+                </div>
+    
+                <div class="redes-sociais">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img src="/img/instagram 1.png"></a></li>
+                            <li><a href="#"><img src="/img/facebook 1.png"></a></li>
+                            <li><a href="#"><img src="/img/whatsapp 1.png"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="cookies">
+                <p>Preferências de cookies© 2024 Eventando</p>
+            </div>
+        </footer>
+
+    <div id="palestrantesInfo" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="palestrantesContainer"></div>
+        </div>
+    </div>
+
+    <script src="/GestaoPalestrantes/GestaoPalestrantes.js">
+        
+    </script>
+</body>
+</html>
